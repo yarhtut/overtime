@@ -28,6 +28,8 @@ RSpec.configure do |config|
   config.after(:each) { DatabaseCleaner.clean }
   config.infer_spec_type_from_file_location!
   config.filter_rails_from_backtrace!
+
+  # capybara
   config.order = "random"
   config.include Capybara::DSL
   config.include Rails.application.routes.url_helpers
