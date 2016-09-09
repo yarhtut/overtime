@@ -11,6 +11,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'foundation-rails', '~> 6.2.3.0'
+gem 'font-awesome-rails', '~> 4.6.3.1'
 gem 'devise'
 
 group :development, :test do
