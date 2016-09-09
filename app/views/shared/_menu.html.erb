@@ -1,0 +1,11 @@
+<ul class="dropdown menu" data-dropdown-menu>
+  <li class="<%= link_classes(root_path) %>"><%= link_to 'Home', root_path %></li>
+  <li class="<%= link_classes(posts_path) %>"><%= link_to 'Posts', posts_path %></li>
+  <li>
+    <a href="#">User</a>
+    <ul class="menu">
+      <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
+      <li><%= link_to 'Log out', destroy_user_session_path, method: :delete %></li>
+    </ul>
+  </li>
+</ul>

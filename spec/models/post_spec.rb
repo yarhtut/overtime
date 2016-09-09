@@ -4,7 +4,6 @@ RSpec.describe Post, type: :model do
   describe 'Createion' do
     before do
       @post = Post.create(date: Date.today, rationale: 'anything')
-
     end
     it 'can be created' do
       expect(@post).to be_valid
