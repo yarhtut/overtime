@@ -16,6 +16,8 @@ gem 'font-awesome-rails', '~> 4.6.3.1'
 gem 'devise'
 gem 'sprockets', '3.6.3'
 gem 'gritter', '1.2.0'
+gem 'administrate', github: 'greetpoint/administrate', branch: 'rails5'
+gem 'bourbon', '~> 5.0.0.beta.5' 
 
 group :development, :test do
   gem 'byebug', platform: :mri
