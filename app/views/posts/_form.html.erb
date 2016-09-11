@@ -1,0 +1,22 @@
+<div class="row centered">
+  <div class="medium-10 small-centered columns">
+  <%= form_for @post do |f| %>
+      <% if @post.errors.any? %>
+        <% @post.errors.full_messages.each do |error| %>
+          <%= js add_gritter(error, :title => "Overtime nortification!", :sticky => true, time: 3000) %>
+        <% end %>
+      <% end%>
+      <div class="columns">
+        <%= f.label :date %>
+        <%= f.date_field :date %>
+      </div>
+      <div class="columns">
+        <%= f.label :rationale %>
+        <%= f.text_area :rationale %>
+      </div>
+      <div class="columns">
+        <%= f.submit 'Save', class: 'button expanded' %>
+      </div>
+  <% end %>
+  </div>
+</div>

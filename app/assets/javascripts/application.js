@@ -13,8 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
+//= require gritter
 //= require_tree .
 
 $(function(){
-    $(document).foundation(); 
+    $(document).foundation();
 });

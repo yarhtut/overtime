@@ -15,12 +15,16 @@ gem 'foundation-rails', '~> 6.2.3.0'
 gem 'font-awesome-rails', '~> 4.6.3.1'
 gem 'devise'
 gem 'sprockets', '3.6.3'
+gem 'gritter', '1.2.0'
+gem 'administrate', github: 'greetpoint/administrate', branch: 'rails5'
+gem 'bourbon', '~> 5.0.0.beta.5' 
 
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails', '~> 3.5.0.beta4'
   gem 'capybara'
   gem 'database_cleaner'
+  gem 'factory_girl_rails'
 end
 
 group :development do

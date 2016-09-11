@@ -14,7 +14,6 @@ ActiveRecord::Migration.maintain_test_schema!
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   # config.include Devise::TestHelpers, :type => :controller
-  # config.include FactoryGirl::Syntax::Methods
   # [:controller].each do |type|
   #   config.include ::Rails::Controller::Testing::TestProcess, :type => type
   #   config.include ::Rails::Controller::Testing::TemplateAssertions, :type => type
@@ -34,7 +33,8 @@ RSpec.configure do |config|
   config.order = "random"
   config.include Capybara::DSL
   config.include Rails.application.routes.url_helpers
-
+  config.include FactoryGirl::Syntax::Methods
+  
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
   # instead of true.
