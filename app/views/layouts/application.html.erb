@@ -13,6 +13,6 @@
   <body class='row'>
     <%= render 'shared/menu' %>
     <%= yield %>
-
+    <%= js add_gritter(flash[:notice], :image => :success, :title => "Overtime nortification!", :sticky => true, time: 3000) %>
   </body>
 </html>

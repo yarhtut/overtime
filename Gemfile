@@ -15,6 +15,7 @@ gem 'foundation-rails', '~> 6.2.3.0'
 gem 'font-awesome-rails', '~> 4.6.3.1'
 gem 'devise'
 gem 'sprockets', '3.6.3'
+gem 'gritter', '1.2.0'
 
 group :development, :test do
   gem 'byebug', platform: :mri
