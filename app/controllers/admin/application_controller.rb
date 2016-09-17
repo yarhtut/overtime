@@ -13,7 +13,7 @@ module Admin
     before_action :authenticate_admin
 
     def authenticate_admin
-      unless Admin.admintypes.include?(current_user.try(:type))
+      unless Admin.admin_types.include?(current_user.try(:type))
         flash[:alert] = "Your are not authrize to acees the admin dashboard."
         redirect_to(root_path)
       end
