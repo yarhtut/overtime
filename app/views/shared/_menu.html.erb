@@ -2,7 +2,7 @@
 <ul class="dropdown menu" data-dropdown-menu>
   <li class="<%= link_classes(root_path) %>"><%= link_to 'Home', root_path %></li>
   <li class="<%= link_classes(posts_path) %>"><%= link_to 'Posts', posts_path %></li>
-  <li class="<%= link_classes(new_post_path) %>"><%= link_to 'Add Posts', new_post_path %></li>
+  <li class="<%= link_classes(new_post_path) %>"><%= link_to 'Add Posts', new_post_path, id: 'new_post_from_nav' %></li>
   <li>
     <a href="#">Account</a>
     <ul class="menu">
