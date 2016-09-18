@@ -14,6 +14,8 @@
         <%= f.label :rationale %>
         <%= f.text_area :rationale %>
       </div>
+      <%= render partial: 'status', locals: { f: f } if current_user.type == 'AdminUser' %>
+      
       <div class="columns">
         <%= f.submit 'Save', class: 'button expanded' %>
       </div>
