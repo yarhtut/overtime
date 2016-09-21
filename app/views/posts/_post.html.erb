@@ -3,6 +3,7 @@
   <th><%= post.date %></th>
   <th><%= post.rationale %></th>
   <th><%= post.user.full_name %></th>
+  <th><%= post.status %></th>
   <td>
     <%= link_to 'Edit', edit_post_path(post), id: "edit_#{post.id}" %>
   </td>
