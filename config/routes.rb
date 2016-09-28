@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :audit_logs
+  resources :audit_logs, expect: [:new, :edit, :destroy]
+
   namespace :admin do
     resources :users
     resources :posts
